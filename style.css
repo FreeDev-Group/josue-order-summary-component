@@ -1,0 +1,128 @@
+:root {
+    --blue-100: hsl(225, 100%, 94%);
+    --blue-700: hsl(245, 75%, 52%);
+    --blue-50: hsl(225, 100%, 98%);
+    --gray-600: hsl(224, 23%, 55%);
+    --blue-950: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background: var(--blue-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.hero {
+    width: 100%;
+}
+
+/* CONTENT */
+.content {
+    padding: 25px;
+}
+
+h1 {
+    color: var(--blue-950);
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--gray-600);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* PLAN BOX */
+.plan-box {
+    background: var(--blue-50);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.plan h2 {
+    font-size: 14px;
+    color: var(--blue-950);
+    font-weight: 700;
+}
+
+.plan span {
+    color: var(--gray-600);
+    font-size: 14px;
+}
+
+.plan-box a {
+    color: var(--blue-700);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: var(--blue-700);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* CANCEL */
+.cancel {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancel:hover {
+    color: var(--blue-950);
+}
